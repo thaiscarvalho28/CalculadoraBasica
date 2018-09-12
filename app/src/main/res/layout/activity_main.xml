@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btnLimparCampo"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:text="Del"
+        android:textSize="18sp"
+        app:layout_column="3"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout1"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/viewResultado"
+        app:layout_row="0" />
+
+    <TextView
+        android:id="@+id/viewResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="serif"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimparCampo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewEquacao" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimparCampo">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="7"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="8"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="9"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="3"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="2"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="1"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="6"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="5"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="4"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btnDiminuir"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="-"
+            android:textSize="20sp"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="*"
+            android:textSize="20sp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btnDividir"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="/"
+            android:textSize="20sp"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/btnPonto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="."
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="0"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btnSomar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:textSize="20sp"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btnResultado"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="serif"
+            android:text="="
+            android:textSize="20sp"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/viewEquacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:textAlignment="textEnd"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
